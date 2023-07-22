@@ -25,64 +25,20 @@ export default {
 
 export const basic = () => (
   <>
-    <Button colorScheme="gray">Button</Button>
-    <Button colorScheme="red">Button</Button>
-    <Button colorScheme="green">Button</Button>
-    <Button colorScheme="blue">Button</Button>
-    <Button colorScheme="teal">Button</Button>
-    <Button colorScheme="pink">Button</Button>
-    <Button colorScheme="purple">Button</Button>
-    <Button colorScheme="cyan">Button</Button>
-    <Button colorScheme="orange">Button</Button>
-    <Button colorScheme="yellow">Button</Button>
-  </>
-);
-
-export const outlines = () => (
-  <>
-    <Button variant="outline" colorScheme="red">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="green">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="blue">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="teal">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="pink">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="purple">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="cyan">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="orange">
-      Button
-    </Button>
-    <Button variant="outline" colorScheme="yellow">
-      Button
-    </Button>
+    <Button>Button</Button>
   </>
 );
 
 export const withVariants = () => (
   <HStack spacing="24px">
     <Button colorScheme="teal" variant="solid">
-      Button
+      Solid
+    </Button>
+    <Button colorScheme="teal" variant="inverted">
+      Inverted
     </Button>
     <Button colorScheme="teal" variant="outline">
-      Button
-    </Button>
-    <Button colorScheme="teal" variant="ghost">
-      Button
-    </Button>
-    <Button colorScheme="teal" variant="link">
-      Button
+      Outline
     </Button>
   </HStack>
 );
@@ -183,13 +139,10 @@ export const withDisabled = () => (
     <Button isDisabled colorScheme="teal" variant="solid">
       Button
     </Button>
+    <Button isDisabled colorScheme="teal" variant="inverted">
+      Button
+    </Button>
     <Button isDisabled colorScheme="teal" variant="outline">
-      Button
-    </Button>
-    <Button isDisabled colorScheme="teal" variant="ghost">
-      Button
-    </Button>
-    <Button isDisabled colorScheme="teal" variant="link">
       Button
     </Button>
   </HStack>
