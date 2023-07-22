@@ -1,4 +1,5 @@
 import merge from 'deepmerge';
+import Button from '~/components/src/Button';
 import space from '~/space/src';
 import sizes from '~/sizes/src';
 import typography from '~/typography/src';
@@ -20,6 +21,11 @@ export const theme = merge.all(
     { borders },
     { zIndices },
     { mdx },
+    {
+      components: {
+        Button,
+      },
+    },
   ],
   { arrayMerge: (t, s) => [...s, ...t] }
 );
